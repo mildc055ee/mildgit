@@ -1,0 +1,24 @@
+[project]
+name = "mildgit"
+version = "0.1.0"
+description = "hobby project to implement build your own git"
+authors = [
+    {name = "mildc055ee", email = "mildc055ee@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "GPL-3.0-only"}
+
+[project.scripts]
+mildgit = "mildgit.cli:main"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.1.5",
+    "pytest>=7.4.3",
+]
